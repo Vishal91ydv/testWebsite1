@@ -156,8 +156,8 @@ body {
   color: var(--slate-gray);
   font-size: 1.6rem;
   line-height: 1.75;
+  overflow-x: hidden;
 }
-
 :focus-visible { outline-offset: 4px; }
 
 ::-webkit-scrollbar { width: 10px; }
@@ -349,7 +349,7 @@ body {
   width: 100%;
   padding-block: 25px;
   transition: padding var(--transition-1);
-  z-index: 4;
+  z-index: 800;
 }
 
 .header.active {
@@ -1890,7 +1890,7 @@ body {
   animation: marquee 10s linear infinite;
   justify-content: space-around;
 }
-@keyframes marquee {
+/* @keyframes marquee {
   0% {
     transform: translateX(0%) rotate(0deg);
     opacity: 1;
@@ -1916,7 +1916,7 @@ body {
     opacity: 0.9;
   }
 }
-
+ */
 
 
 
@@ -1941,4 +1941,23 @@ body {
 .testimonial-heading p{
   text-align: center;
 
+}
+
+/* Responsiveness of landing page */
+@media(max-width:400px){
+  .card-area{
+    overflow: hidden;
+  }
+  .hero-banner img{
+    width: 350px;
+  }
+  .logo{
+    font-size: 28px;
+  }
+  .header{
+    width: 350px;
+  }
+  .hero-title{
+    font-size: 30px;
+  }
 }

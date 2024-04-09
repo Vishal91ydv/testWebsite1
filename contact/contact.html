@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <title>Pixel Perfect Films</title>
+
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets\images\PPF.png" type="image/svg+xml">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;50;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+  <!-- Animation CDN Link  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Font awesome Icons -->
+  <script src="https://kit.fontawesome.com/53083b1d5d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <!-- Header  -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="../index.html" class="logo">Pixel Perfect Films</a>
+
+      <nav class="navbar" data-navbar>
+        <div class="wrapper">
+          <a href="#" class="logo">Pixel Perfect Films</a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blogt" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#carrier" class="navbar-link" data-nav-link>Carrier</a>
+          </li>
+          <li class="navbar-item">
+            <a href="../Testimonials/testimonials.html" class="navbar-link" data-nav-link>Testimonial</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="contact.html" class="btn btn-primary has-before has-after">Let’s Talk 👋</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+    <section class="contact-head">
+        <div class="backImage"></div>
+        <div class="contact-content">
+            <h1 data-aos="zoom-in-up">Contact Us</h1>
+            <p data-aos="zoom-in-up">Connect with Pixel Perfect Film for Any Assistance or Information</p>
+        </div>
+    </section>
+
+    <section class="get-in-touch">
+      <h2 data-aos="fade-right" data-aos-delay="300">Get In Touch With Us</h2>
+      <div class="git-container">
+        <div class="git-box" data-aos="fade-right" data-aos-delay="100">
+          <i class="fa-solid fa-phone"></i>
+          <h3>Phone</h3>
+          <p>+91 99304 08816</p>
+        </div>
+        <div class="git-box" id="second-git-box" data-aos="fade-up" data-aos-delay="300">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Address</h3>
+          <p>Pixel Perfect Films,
+            Sangharsh Nagar Chandivali,
+            Andheri East,
+            Munbai-72</p>
+        </div>
+        <div class="git-box" data-aos="fade-left" data-aos-delay="300">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Email</h3>
+          <p>pixelperfectfilm@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <div class="form-container">
+        <h2 data-aos="fade-right" data-aos-delay="100">HOW CAN WE HELP YOU?</h2>
+        <p data-aos="fade-right" data-aos-delay="100">Fill Out The Form And We Will Be In Touch Soon !</p>
+        <form onsubmit="emailSend(); reset(); return false;" >
+          <div class="contact-input" data-aos="fade-right" data-aos-delay="100">
+            <label for="name">Full Name</label>
+            <input type="text" placeholder="Name" id="name" name="name" required>
+          </div>
+          <div class="contact-input" data-aos="fade-right" data-aos-delay="100">
+            <label for="phone">Phone Number</label>
+            <input type="number" placeholder="Phone Number" id="phone" name="phone" required>
+          </div>
+          <div class="contact-input" data-aos="fade-right" data-aos-delay="100">
+            <label for="email">Email Address</label>
+            <input type="email" placeholder="Email Address" id="email" name="email" required>
+          </div>
+          <div class="contact-input" data-aos="fade-right" data-aos-delay="100">
+            <label for="message">Message</label>
+            <input type="text" placeholder="Your Message" id="message" name="message" required>
+          </div>
+          <button type="submit" class="contact-button" data-aos="fade-right" data-aos-delay="100"><i class="fa-solid fa-share"></i> Send</button>
+        </form>
+      </div>
+      <div class="social-media" data-aos="fade-left" data-aos-delay="100">
+         <img src="../assets/images/social-media.gif" alt="Gif" title="social media">
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Footer  -->
+    <footer class="footer">
+      <div class="container">
+  
+        <div class="footer-top section">
+  
+          <div class="footer-brand">
+  
+            <p class="footer-list-title">About Pixel Perfect Films.</p>
+  
+            <p class="footer-text">
+              Pixel Perfect Films: Where Every Pixel Tells a Story - From Dynamic Ads to Captivating Short Films, Flawless
+              Video Edits, Eye-catching Graphics, and Powerful Social Media Marketing.
+            </p>
+  
+            <ul class="social-list">
+  
+              <li>
+                <a href="https://youtube.com/@PixelPerfectFilms_?si=9UxWOsIt4I2E2oLb" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="https://www.instagram.com/pixelperfectfilms_?igsh=ZDZvMml3Mm5xaGFu" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61557175365406&mibextid=ZbWKwL" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="https://www.linkedin.com/company/pixelperfectfilms/" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="https://wa.me/917977193183" class="social-link">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </li>
+  
+            </ul>
+  
+          </div>
+  
+          <ul class="footer-list">
+  
+            <li>
+              <p class="footer-list-title">Usefull Links</p>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">How it Works</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Price List</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Explore</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Terms & Services</a>
+            </li>
+  
+          </ul>
+  
+          <ul class="footer-list">
+  
+            <li>
+              <p class="footer-list-title">Community</p>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Partners</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Suggestions</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Newsletters</a>
+            </li>
+  
+          </ul>
+  
+          <ul class="footer-list">
+  
+            <li>
+              <p class="footer-list-title">Our Team</p>
+            </li>
+  
+            <li>
+              <ul class="insta-post">
+  
+                <li>
+                  <div class="insta-card">
+  
+                    <figure class="post-banner">
+                      <img src="./assets/images/insta-post-1.jpg" width="77" height="63" loading="lazy"
+                        alt="instagram post" class="img-cover">
+                    </figure>
+  
+                    <a href="#" class="card-content">
+                      <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                    </a>
+  
+                  </div>
+                </li>
+  
+                <li>
+                  <div class="insta-card">
+  
+                    <figure class="post-banner">
+                      <img src="./assets/images/insta-post-2.jpg" width="77" height="63" loading="lazy"
+                        alt="instagram post" class="img-cover">
+                    </figure>
+  
+                    <a href="#" class="card-content">
+                      <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                    </a>
+  
+                  </div>
+                </li>
+  
+                <li>
+                  <div class="insta-card">
+  
+                    <figure class="post-banner">
+                      <img src="./assets/images/insta-post-3.jpg" width="77" height="63" loading="lazy"
+                        alt="instagram post" class="img-cover">
+                    </figure>
+  
+                    <a href="#" class="card-content">
+                      <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                    </a>
+  
+                  </div>
+                </li>
+  
+                <li>
+                  <div class="insta-card">
+  
+                    <figure class="post-banner">
+                      <img src="./assets/images/insta-post-4.jpg" width="77" height="63" loading="lazy"
+                        alt="instagram post" class="img-cover">
+                    </figure>
+  
+                    <a href="#" class="card-content">
+                      <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                    </a>
+  
+                  </div>
+                </li>
+  
+                <li>
+                  <div class="insta-card">
+  
+                    <figure class="post-banner">
+                      <img src="./assets/images/insta-post-5.jpg" width="77" height="63" loading="lazy"
+                        alt="instagram post" class="img-cover">
+                    </figure>
+  
+                    <a href="#" class="card-content">
+                      <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                    </a>
+  
+                  </div>
+                </li>
+  
+                <li>
+                  <div class="insta-card">
+  
+                    <figure class="post-banner">
+                      <img src="./assets/images/insta-post-6.jpg" width="77" height="63" loading="lazy"
+                        alt="instagram post" class="img-cover">
+                    </figure>
+  
+                    <a href="#" class="card-content">
+                      <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                    </a>
+  
+                  </div>
+                </li>
+  
+              </ul>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+        <div class="footer-bottom">
+  
+          <p class="copyright">
+            &copy; 2024 Pixel Perfect Films.
+          </p>
+  
+          <ul class="footer-bottom-list">
+  
+            <li>
+              <a href="#" class="footer-bottom-link">Terms and conditions</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy policy</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-bottom-link">See our price list</a>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+      </div>
+    </footer>
+  
+
+    <!-- - #BACK TO TOP -->
+  
+  
+    <!-- <a href="#top" class="back-top-btn has-after active" aria-label="back to top" data-back-top-btn>
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a> -->
+
+    <!-- 
+      - custom js link
+    -->
+    <script src="./assets/js/script.js" defer></script>
+  
+    <!-- 
+      - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="contact.js"></script>
+
+  
+</body> 
+</html>
